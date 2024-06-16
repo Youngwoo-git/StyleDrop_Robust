@@ -8,13 +8,12 @@ if 'selected_imgs' not in st.session_state:
     st.session_state.selected_imgs = []
     st.session_state.selected_caps = []
 if 'original_imgs' not in st.session_state:
-    # st.session_state.original_imgs = glob("./results/oriental_egret/it_data/*.png")
-    # st.session_state.original_caps = [os.path.basename(x).split(".")[0] for x in st.session_state.original_imgs]
     st.session_state.original_imgs = []
     st.session_state.original_caps = []
     
 if 'style_list' not in st.session_state:
-    st.session_state.style_list = glob("./data/image*.json") + glob("./data/oriental*.json")
+    # st.session_state.style_list = glob("./data/image*.json") + glob("./data/oriental*.json")
+    st.session_state.style_list = glob("./data/image*.json")
     st.session_state.style_list = [os.path.basename(x).split(".")[0] for x in st.session_state.style_list]
     st.session_state.style_list.sort()
     

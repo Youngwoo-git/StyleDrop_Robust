@@ -11,6 +11,21 @@ The Detailed Instruction for usage, refer to [link](https://github.com/aim-uofa/
 
 
 
+
+## Round 2 Training
+
+use [custom_IT.py](./configs/cuustom_IT.py) for iterative training
+
+#### Data Selection
+```bash
+       streamlit run image_selector.py
+```
+
+
+## Inference
+
+use demo codes in [notebook](Basic_tools.ipynb) to calculate Text/Style score or to generate image using adapter of your taste!
+
 ## Citation
 ```bibtex
 @article{sohn2023styledrop,
